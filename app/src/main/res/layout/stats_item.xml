@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/successLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:textSize="24sp"
+            android:text="Успешных"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/successValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="20"
+            app:layout_constraintEnd_toEndOf="@+id/successLabel"
+            app:layout_constraintStart_toStartOf="@+id/successLabel"
+            app:layout_constraintTop_toBottomOf="@+id/successLabel" />
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Всего"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/successLabel"
+            app:layout_constraintTop_toTopOf="@+id/successLabel" />
+
+        <TextView
+            android:id="@+id/percentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:text="Процент"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/totalLabel"
+            app:layout_constraintTop_toTopOf="@+id/totalLabel" />
+
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/totalLabel"
+            app:layout_constraintStart_toStartOf="@+id/totalLabel"
+            app:layout_constraintTop_toBottomOf="@+id/totalLabel" />
+
+        <TextView
+            android:id="@+id/percentValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/percentLabel"
+            app:layout_constraintStart_toStartOf="@+id/percentLabel"
+            app:layout_constraintTop_toBottomOf="@+id/percentLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

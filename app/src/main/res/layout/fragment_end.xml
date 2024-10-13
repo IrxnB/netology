@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".End">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cheese" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/returnButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="@string/back"
+            app:backgroundTint="@color/cheese"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/totalValue"
+            app:layout_constraintStart_toStartOf="@+id/totalValue"
+            app:layout_constraintTop_toBottomOf="@+id/totalValue"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/successLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="176dp"
+            android:text="@string/success"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/successValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/successLabel"
+            app:layout_constraintStart_toStartOf="@+id/successLabel"
+            app:layout_constraintTop_toBottomOf="@+id/successLabel" />
+
+        <TextView
+            android:id="@+id/totalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/successValue"
+            app:layout_constraintStart_toStartOf="@+id/successValue"
+            app:layout_constraintTop_toBottomOf="@+id/successValue" />
+
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/totalLabel"
+            app:layout_constraintStart_toStartOf="@+id/totalLabel"
+            app:layout_constraintTop_toBottomOf="@+id/totalLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">netology</string>
+    <string name="speed">Скорость</string>
+    <string name="size">Размер</string>
+    <string name="count">Число мышек</string>
+    <string name="start">Начать</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="success">Нажатий по мышкам:</string>
+    <string name="total">Всего нажатий:</string>
+    <string name="back">Назад</string>
+</resources>
